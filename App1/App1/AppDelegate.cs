@@ -11,6 +11,7 @@ namespace BounceTest
     public override void ApplicationDidFinishLaunching(CCApplication application, CCWindow mainWindow)
     {
       application.ContentRootDirectory = "Content";
+      CCSimpleAudioEngine.SharedEngine.PreloadEffect("sounds/tap");
       var windowSize = mainWindow.WindowSizeInPixels;
 
       var desiredWidth = 768.0f;
